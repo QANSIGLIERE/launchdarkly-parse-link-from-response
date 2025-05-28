@@ -1,4 +1,4 @@
-var { linkParser } = require('../index');
+var { linkParserFromResponse } = require('../index');
 
 test('Parse a server response', () => {
     let initialData = {
@@ -12,7 +12,7 @@ test('Parse a server response', () => {
         items: [],
     };
 
-    expect(linkParser(initialData)).toEqual({
+    expect(linkParserFromResponse(initialData)).toEqual({
         last: '/api/v2/projects/edgewater/environments?limit=1&offset=1',
         next: '/api/v2/projects/edgewater/environments?limit=1&offset=1',
         parent: '/api/v2/projects/edgewater',
@@ -22,7 +22,7 @@ test('Parse a server response', () => {
 
 test('Parse invalid headers', () => {
     let initialData;
-    expect(linkParser(initialData)).toBeFalsy();
+    expect(linkParserFromResponse(initialData)).toBeFalsy();
 });
 
 test('Parse an invalid server response', () => {
@@ -30,5 +30,5 @@ test('Parse an invalid server response', () => {
         items: [],
     };
 
-    expect(linkParser(initialData)).toEqual(null);
+    expect(linkParserFromResponse(initialData)).toEqual(null);
 });

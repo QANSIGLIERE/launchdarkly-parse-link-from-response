@@ -1,3 +1,2 @@
-export { linkParser };
-import { linkParser } from "./dist/lib/parseLinkFromResponse.js";
+export { unknown as linkParser };
 //# sourceMappingURL=index.d.ts.map

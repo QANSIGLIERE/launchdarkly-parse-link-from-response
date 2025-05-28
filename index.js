@@ -1,3 +1,3 @@
-var { linkParser } = require('./lib/parseLinkFromResponse.js');
+var { linkParserFromResponse } = require('./lib/parseLinkFromResponse.js');
 
 module.exports.linkParser = linkParser;
