@@ -1,6 +1,7 @@
 # Launchdarkly Parse Link From Response
 
-The main idea of ​​this library created in the JavaScript language is to parse data from server response and define next link for upload. It can be used for LaunchDarkly API integrations
+The main idea of ​​this library created in the JavaScript language is to parse data from server response and define next
+link for upload. It can be used for LaunchDarkly API integrations
 
 ## Author
 
@@ -16,8 +17,8 @@ Using npm `npm i qansigliere-launchdarkly-parse-link-from-response`
 
 ## How to use it
 
-In case if You work with LaunchDarkly, You need to extract a link key value from response to upload
-all available data. This library can help You with it. How it works:
+In case if You work with LaunchDarkly, You need to extract a link key value from response to upload all available data.
+This library can help You with it. How it works:
 
 ```
 var { linkParser } = require('qansigliere-launchdarkly-parse-link-from-response');
